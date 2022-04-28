@@ -6,7 +6,7 @@ Mini-game do dinossauro quando não há conexão de internet.
 
 Abrir index.html no navegador preferencial.
 
--------------------------------------------------------------------------------------
+------------------------------------------------------------------------------------
 
 # Dinossaur Game
 
