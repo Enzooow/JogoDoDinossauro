@@ -58,7 +58,8 @@ function createCactus() {
         }
         else if(cactusPos > 0 && cactusPos < 60 && position < 60){
             clearInterval(leftInterval);
-            document.body.innerHTML = '<h1 class="game-over">Fim de Jogo</h1>';
+            document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
+            botao.classList.remove('hidden');
         }
 
         else {
