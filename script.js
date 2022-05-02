@@ -3,11 +3,16 @@ const background = document.querySelector('.background');
 let isGameOver = false;
 let isJumping = false;
 let position = 0;
+var currentScore = document.querySelector('.currentScore');
 
 function handleKeyUp(event) {
     if(event.keyCode === 32) {
         if(!isJumping) {
-        jump();
+            var pontuacao = parseInt(currentScore.innerText);
+            pontuacao++;
+            currentScore.innerText = pontuacao;
+            console.log(currentScore);
+            jump();
         }
     }
 }
@@ -59,7 +64,6 @@ function createCactus() {
         else if(cactusPos > 0 && cactusPos < 60 && position < 60){
             clearInterval(leftInterval);
             document.body.innerHTML = '<h1 class="game-over">Game Over</h1>';
-            botao.classList.remove('hidden');
         }
 
         else {
